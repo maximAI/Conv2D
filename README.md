@@ -10,26 +10,22 @@
 
 Импортируем нужные библиотеки.
 ```
+from tensorflow.keras.models import Sequential                  # Загружаем абстрактный класс базовой модели сети от кераса
+# Подключим необходимые слои
+from tensorflow.keras.layers import Dense, Conv2D, MaxPooling2D, Flatten, Dropout, BatchNormalization
+from tensorflow.keras.preprocessing.image import ImageDataGenerator # Подключим ImageDataGenerator для аугментации
+from tensorflow.keras.optimizers import Adam, Adadelta          # Подключим оптимизаторы
+from tensorflow.keras import utils                              # Подключим utils
+from tensorflow.keras.preprocessing import image                # Подключим image для работы с изображениями
+from google.colab import files                                  # Подключим гугл диск
 import numpy as np                                              # Подключим numpy - библиотеку для работы с массивами данных
 import pandas as pd                                             # Загружаем библиотеку Pandas
 import matplotlib.pyplot as plt                                 # Подключим библиотеку для визуализации данных
-import os                                                       # Импортируем модуль os для загрузки данных
-import time                                                     # Импортируем модуль time
-from google.colab import drive                                  # Подключим гугл диск
-from tensorflow.keras.models import Model                       # Загружаем абстрактный класс базовой модели сети от кераса
-# Подключим необходимые слои
-from tensorflow.keras.layers import Dense, Flatten, Reshape, Input, Conv2DTranspose, \
-                                    concatenate, Activation, MaxPooling2D, Conv2D, \
-                                    BatchNormalization, Dropout, MaxPooling1D, UpSampling2D
-from tensorflow.keras import backend as K                       # Подключим бэкэнд Керас
-from tensorflow.keras.optimizers import Adam                    # Подключим оптимизатор
-from tensorflow.keras import utils                              # Подключим utils
-from tensorflow.keras.utils import plot_model                   # Подключим plot_model для отрисовки модели
-from tensorflow.keras.preprocessing import image                # Подключим image для работы с изображениями
 from PIL import Image                                           # Подключим Image для работы с изображениями
-from tensorflow.keras.callbacks import EarlyStopping, ReduceLROnPlateau, LambdaCallback # 
-import tensorflow as tf                                         # Импортируем tensorflow
 import random                                                   # Импортируем библиотеку random
+import math                                                     # Импортируем модуль math
+import os                                                       # Импортируем модуль os для загрузки данных
+%matplotlib inline
 ```
 Объявим необходимые функции.
 ```
