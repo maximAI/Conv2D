@@ -150,8 +150,7 @@ plt.ylabel('Доля верных ответов')
 plt.legend()
 plt.show()
 ```
-[:arrow_up:Оглавление](#3)
-
 ![Иллюстрация к проекту](https://github.com/maximAI/Conv2D/blob/main/Screenshot_1.jpg)
-```
+
+[:arrow_up:Оглавление](#3)
 [Ноутбук](https://colab.research.google.com/drive/1Vpx_8v8hZ_Om3MMucuCe8aIE5b-hVfwZ?usp=sharing)
