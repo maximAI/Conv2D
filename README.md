@@ -26,7 +26,7 @@ import math                                                     # Импорти
 import os                                                       # Импортируем модуль os для загрузки данных
 %matplotlib inline
 ```
-[:arrow_up:Оглавление](#5)
+[:arrow_up:Оглавление](#3)
 <a name="1"></a>
 ## Загрузка данных.
 Загрузим базу.
@@ -74,7 +74,7 @@ validation_generator = datagen.flow_from_directory(
     subset = 'validation')                  # Устанавливаем как валидационный набор
 ```
 
-[:arrow_up:Оглавление](#5)
+[:arrow_up:Оглавление](#3)
 <a name="2"></a>
 ## Сеть
 ```
@@ -150,7 +150,7 @@ plt.ylabel('Доля верных ответов')
 plt.legend()
 plt.show()
 ```
-[:arrow_up:Оглавление](#5)
+[:arrow_up:Оглавление](#3)
 
 ![Иллюстрация к проекту](https://github.com/maximAI/Autoencoder/blob/main/Screenshot_1.jpg)
 ```
